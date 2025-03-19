@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.contact-sidebar {
+    width: 250px;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+.contact-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-sidebar li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.contact-sidebar li:hover {
+    background-color: #0055aa;
+}
+
+.contact-content {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+}
+
+h1 {
+    /* color: #003366; */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 2px auto;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.feature-box h2 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #666;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://plus.unsplash.com/premium_photo-1681487769650-a0c3fbaed85a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-text {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    max-width: 80%;
+  }
+  
+  @media (max-width: 768px) {
+    .banner-text {
+      font-size: 1.5rem;
+    }
+  }
+  

@@ -1,0 +1,31 @@
+.svg-rounded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.save-effort {
+    text-align: center;
+    flex: 1;
+}
+
+.icon-container {
+    position: relative;
+}
+
+.icon-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.save-effort h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.save-effort p {
+    margin-top: 5px;
+    font-size: 1em;
+}

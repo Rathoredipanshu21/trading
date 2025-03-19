@@ -1,0 +1,29 @@
+.testimonial-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 50vh;
+    padding-top: 51px;
+    font-family: mulish, sans-serif;
+  }
+  
+  .testimonial {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto; /* Center the testimonial */
+    max-width: 400px; 
+    font-family: gillory, sans-serif;
+    /* Optional: limit the width of the testimonial */
+  }
+  
+  .testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block; /* Make the image a block element */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+  }
