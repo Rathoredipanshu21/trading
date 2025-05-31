@@ -1,0 +1,28 @@
+.sidebar {
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar-collapsed {
+  width: 80px;
+}
+
+.sidebar-expanded {
+  width: 30%;
+}
+
+.sidebar button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

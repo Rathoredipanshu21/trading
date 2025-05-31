@@ -4,8 +4,7 @@ import { faHeartbeat, faShieldAlt, faUserShield } from "@fortawesome/free-solid-
 import Hero from "./Hero";
 import ChooseUs from "./ChooseUs";
 import Testimonial from "./Testomonial";
-import Products from "./Products";
-import Easy from "./Easy";
+import Products from "./Products.jsx";
 
 const Home = () => {
   return (
@@ -44,7 +43,7 @@ const Home = () => {
       </div>
       <div style={{ marginTop: "1em" }}>
         <a
-          href="#"
+          href="/services"
           style={{
             display: "inline-block",
             padding: "10px 20px",
@@ -64,7 +63,7 @@ const Home = () => {
 
 
 <Products/>
-{/* <Easy/> */}
+
 
 
     
@@ -72,11 +71,6 @@ const Home = () => {
 
 
 
-
-    <Hero/>
-
-    <ChooseUs/>
-    <Testimonial/>
     </>
   );
 };

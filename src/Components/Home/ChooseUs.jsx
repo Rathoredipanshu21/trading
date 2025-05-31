@@ -22,7 +22,7 @@ const ChooseUs = () => {
 
     <div className="contact-container">
       <div className="contact-content">
-        <h1 className="center-text">WHY CHOOSE <span style={{color:'green'}}>SEVEN SERVICES</span> </h1>
+        <h1 className="center-text">WHY CHOOSE <span style={{color:'green'}}>SEVEN FINANCE</span> </h1>
         <hr style={{color:'orangered'}} />
         <p style={{textAlign:'center'}}>Seven services is one of the leading insurance providers in the country, offering a wide range of insurance products to cater to diverse needs.</p>
         

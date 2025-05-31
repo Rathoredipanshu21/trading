@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faHome, faBriefcase, faCar, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import "./Products.css";
@@ -40,6 +41,7 @@ const products = [
 
 const Products = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   // Auto slider (changes every 2 seconds)
   useEffect(() => {
@@ -49,8 +51,13 @@ const Products = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleProductClick = (id) => {
+    navigate(`/product/${id}`);
+  };
+
   return (
-    <>    <section className="products-goals">
+    <>    
+    <section className="products-goals" style={{backgroundColor:'#E8F5E9'}}>
       <h2>Our Products For Your Goals</h2>
       <hr  style={{color:'green',width:'50%',margin:'2px auto' ,padding:'10px'}}/>
       <div data-aos="fade-down-right">
@@ -60,6 +67,7 @@ const Products = () => {
             key={product.id}
             className={`product-card ${index === currentIndex ? "active" : ""}`}
             style={{ backgroundColor: product.bgColor }}
+            onClick={() => handleProductClick(product.id)}
           >
             <div className="product-icon">
               <FontAwesomeIcon icon={product.icon} size="3x" />

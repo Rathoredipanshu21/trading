@@ -1,0 +1,150 @@
+.moneysafety-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 245, 233);
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden; /* Prevents overflow */
+}
+
+.moneysafety-left {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.vector-image {
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.moneysafety-right {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.moneysafety-right h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.moneysafety-right p {
+  font-size: 1.2rem;
+  color: #4caf50;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.dropdown-list {
+  margin-top: 20px;
+}
+
+.dropdown-item {
+  margin-bottom: 10px;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #a5d6a7;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-header:hover {
+  background-color: #81c784;
+}
+
+.dropdown-title {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-icon {
+  margin-right: 10px;
+  color: #2e7d32;
+}
+
+.dropdown-header span {
+  font-size: 1.1rem;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #2e7d32;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Media query adjustments for mobile screens */
+@media (max-width: 768px) {
+  .moneysafety-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure container takes up the full width */
+    padding: 15px; /* Add some padding for small screens */
+    box-sizing: border-box;
+  }
+
+  .moneysafety-left, .moneysafety-right {
+    max-width: 100%;
+    flex: 1;
+  }
+
+  .moneysafety-right {
+    padding: 15px;
+  }
+
+  .moneysafety-right h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .moneysafety-right p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .dropdown-header span {
+    font-size: 1rem;
+  }
+
+  .dropdown-content {
+    font-size: 0.9rem;
+  }
+
+  .vector-image {
+    max-width: 90%; /* Reduce image size on smaller screens */
+  }
+
+  .dropdown-list {
+    margin-top: 10px;
+  }
+}

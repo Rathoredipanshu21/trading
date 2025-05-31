@@ -1,0 +1,125 @@
+.scrollspy-container {
+    width: 100%;
+    height: auto;
+    overflow-y: auto; /* Ensure scrolling works on all devices */
+    position: relative;
+    scroll-padding-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #F9FAFB; /* Softer background for better readability */
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-height: 400px;
+    margin: 20px auto;
+}
+
+.scrollspy-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.bg-custom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+   background-color: #E8F5E9;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+/* 
+.bg-custom img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.bg-custom img{
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .bg-custom {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.scrollspy-container h4 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.scrollspy-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555; /* Softer text color for better readability */
+    margin-bottom: 20px;
+}
+
+.icon-style {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+@media (max-width: 768px) {
+    .scrollspy-container {
+        width: 90%;
+        height: auto;
+        max-height: 300px; /* Adjust height for smaller screens */
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .scrollspy-container h4 {
+        font-size: 1.4rem;
+    }
+
+    .scrollspy-container p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .icon-style {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .scrollspy-container {
+        width: 100%;
+        padding: 10px;
+        max-height: 250px; /* Further adjust height for phone screens */
+    }
+
+    .scrollspy-container h4 {
+        font-size: 1.2rem;
+    }
+
+    .scrollspy-container p {
+        font-size: 0.8rem;
+    }
+
+    .icon-style {
+        font-size: 1rem;
+    }
+}

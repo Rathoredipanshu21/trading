@@ -3,7 +3,7 @@ import './Trading.css';
 
 import groww from '../Assets/groww.png'
 import mutual from '../Assets/mutual.png'
-import zerodha from '../Assets/zerodha.png'
+// import zerodha from '../Assets/zerodha.png'
 import upstock from '../Assets/upstock.png'
 import Hero from './Hero';
 

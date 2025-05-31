@@ -1,0 +1,39 @@
+
+.text-box {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-box h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    width: 80%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    .image-box img {
+        width: 60%;
+    }
+}

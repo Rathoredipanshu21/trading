@@ -23,3 +23,46 @@
 .navbar-toggler {
   margin: 0 10px;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 0 10px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+
+  .form-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-inline button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

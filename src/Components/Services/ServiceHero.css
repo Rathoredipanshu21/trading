@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.left {
+    flex: 1;
+    font-size: 20px;
+    padding: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.left h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.left h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+}
+
+#animated-text {
+    color: green;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        width: 80%;
+        text-align: left;
+    }
+
+    .left h1 {
+        font-size: 36px;
+    }
+
+    .left h3 {
+        font-size: 18px;
+    }
+}

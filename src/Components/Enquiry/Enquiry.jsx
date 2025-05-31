@@ -2,14 +2,13 @@ import React from 'react';
 import './Enquiry.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-
+import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Enquiry = () => {
   return (
     <div className="enquiry-container">
       <header className="enquiry-header">
-        <h1>Contact Us</h1>
-        <p>We are here to assist you with any finance, insurance, life, or health-related enquiries.</p>
+       
       </header>
       <div className="enquiry-content">
         <div className="enquiry-info">
@@ -17,17 +16,25 @@ const Enquiry = () => {
           <p>We are here to assist you with any questions or concerns you may have. Please fill out the form and we will get back to you as soon as possible.</p>
           <p>You can also reach us through our social media channels:</p>
           <div className="social-media">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
+
           </div>
+          <aside className="enquiry-sidebar" style={{marginTop:'75px'}}>
+          <h2>Contact Information</h2>
+          <p><FontAwesomeIcon icon={faPhone} /> +1 234 567 890</p>
+          <p><FontAwesomeIcon icon={faEnvelope} /> support@example.com</p>
+          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> 123 Green Street, Cityville</p>
+        </aside>
         </div>
+        
         <form className="enquiry-form">
           <h2>Contact Form</h2>
           <div className="form-group">
@@ -48,9 +55,10 @@ const Enquiry = () => {
           </div>
           <button type="submit" className="submit-button">Submit</button>
         </form>
+      
       </div>
+     
     </div>
-   
   );
 }
 

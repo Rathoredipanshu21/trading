@@ -1,0 +1,34 @@
+.product-detail {
+  padding: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.product-detail-card {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product-detail-icon {
+  text-align: center;
+}
+
+.product-detail-content {
+  margin-top: 20px;
+}
+
+.product-detail-content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.product-detail-content p {
+  margin-top: 10px;
+  line-height: 1.6;
+}

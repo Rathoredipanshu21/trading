@@ -1,0 +1,228 @@
+.investment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .investment-card {
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row with a gap */
+    max-width: calc(33.33% - 20px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .investment-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .investment-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .overlay p {
+    font-size: 14px;
+  }
+  
+  .box {
+    width: 450px;
+    margin: 10px auto;
+    box-shadow: 0 0 5px #bababa;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #000;
+    transition: transform 0.5s ease;
+  }
+  
+  .box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 1s ease;
+  }
+  
+  .box:hover img {
+    transform: scale(0);
+  }
+  
+  .box .content {
+    background-color: green;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  
+  .box:hover .content {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .box::before,
+  .box::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .box::before {
+    bottom: 5%;
+    left: 5%;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  
+  .box::after {
+    top: 5%;
+    right: 5%;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
+  
+  .box .box-content {
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    left: 10%;
+  }
+  
+  .box .post,
+  .box .name {
+    display: block;
+    font-size: 25px;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .box .post,
+  .box:hover .name {
+    opacity: 0;
+  }
+  
+  .box:hover .post {
+    opacity: 1;
+  }
+  
+  .box:hover:before,
+  .box:hover:after {
+    opacity: 1;
+    width: 90%;
+    height: 90%;
+    transition: all 1s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .investment-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .investment-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .image-container {
+      height: 150px;
+    }
+  
+    .overlay h3 {
+      font-size: 16px;
+    }
+  
+    .overlay p {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .investment-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .investment-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .image-container {
+      height: 120px;
+    }
+  
+    .overlay {
+      padding: 5px;
+    }
+  
+    .overlay h3 {
+      font-size: 14px;
+    }
+  
+    .overlay p {
+      font-size: 12px;
+    }
+  
+    .box {
+      max-width: 100%;
+    }
+  
+    .box .content {
+      padding: 20px;
+    }
+  }
+  

@@ -1,0 +1,87 @@
+.about-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #E8F5E9;
+  flex-wrap: wrap;
+}
+
+/* Left Side - Overlapping Images */
+.image-container {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  position: absolute;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Overlapping Effect */
+.img1 {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.img2 {
+  top: 40px;
+  left: 80px;
+  z-index: 2;
+}
+
+.img3 {
+  top: 80px;
+  left: 160px;
+  z-index: 3;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Right Side - Text Content */
+.text-section {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.text-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  /* color: #333; */
+}
+
+.text-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .about-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .text-section {
+    width: 90%;
+    padding-left: 0;
+  }
+}
